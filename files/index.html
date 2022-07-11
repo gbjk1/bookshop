@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookstore</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/x-icon" href="images/Bookstore.jpg">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
+    </head>
+    <body>
+    
+    <div class="container">
+
+        <header>
+            <img src="images/Bookstore.jpg" alt="Bookstore Logo">
+            <h1>
+                Bookshop
+            </h1>
+        </header>
+
+        <nav class="categories">
+            <h2>
+                Categories
+            </h2>
+            <ul class="nav_links" id="categories">
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="#" onclick='window.open("https://www.amazon.com");return false;'>Browse Amazon</a></li>
+
+            </ul>
+        </nav>
+
+        <main id="mainjs">
+            <a id="top"></a>
+
+            <a href="#top" id="gototop">Go to Top</a>
+        </main>
+
+        <aside id="aside">
+            <h2>Shopping Cart
+                <button class="enlarge" id="enlarge"  onclick="enlargeShoppingCart()">View</button>
+            </h2>
+        <ul id="asidelist">
+
+        </ul>
+        <p>Total: <span id="sum">0.0</span>&euro;</p>
+        </aside>
+
+        <footer id="footer">
+            &copy;Bookshop 
+            <br> 
+            <address>
+                Written by <a href="mailto:janedoe@example.com">Guntram Klaus</a>
+             
+            <br> 
+            Visit us at: <a href="#" onclick='window.open("https://www.fh-campuswien.ac.at/");return false;'>FH Campus Vienna</a> 
+            <br>
+            1100 Vienna, Austria
+            &nbsp 
+            &nbsp 
+            
+            <a href="#top" id="gototop2">Go to Top</a>
+            </address>
+        </footer>
+
+    </div>
+
+    </body>
+</html>

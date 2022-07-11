@@ -1,0 +1,56 @@
+html, body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+input[type='radio'] { 
+    transform: scale(1.5); 
+}
+
+
+h1 {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+}
+@media screen and (max-width:321px) { 
+    table {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width:415px) and (min-width:321px) { 
+    table {
+        font-size: smaller;
+    }
+}
+
+fieldset {
+    margin-bottom: 15px;
+    background-color: rgb(243, 230, 111);
+    border-radius: 10px;
+}
+
+p {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#email, #homepage, #birthday {
+    width: 90%;
+    padding: 5px;
+    margin: 5px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+.tablefield {
+    text-align: center;
+}

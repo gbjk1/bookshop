@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookstore</title>
+        <link rel="stylesheet" href="feedback.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+    
+        <form action="/api/feedbacks" method="post">
+
+        <h1>
+            Website Feedback Form
+        </h1>
+
+        <fieldset>
+        <p>
+            Is this the first time you have visited the website?
+        </p>
+
+        <input type="radio" id="yes" name="former_usage" value="Yes">
+        <label for="yes">yes</label>
+        <input type="radio" id="no" name="former_usage" value="No">
+        <label for="yes">no</label><br>
+        </fieldset>
+
+        <fieldset>
+
+        <p>
+            What is the PRIMARY reason you came to the website?
+        </p>
+
+        <textarea id="reason_for_visit" name="reason_for_visit" rows="5" cols="30"></textarea>
+        </fieldset>
+
+        <fieldset>
+
+        <p>
+            Did you find what you needed?
+        </p>
+
+        <input type="radio" id="all" name="fuendig" value="all">
+        <label for="all">Yes, all of it</label>
+        <input type="radio" id="some" name="fuendig" value="some">
+        <label for="some">Yes, some of it</label>
+        <input type="radio" id="none" name="fuendig" value="none">
+        <label for="none">No, none of it</label><br>
+
+        </fieldset>
+
+        <fieldset>
+
+        <p>
+            If you did not find any or all of what you needed, please tell us what information you were looking for.
+        </p>
+
+        <textarea id="expected_info" name="expected_info" rows="5" cols="30"></textarea>
+
+        </fieldset>
+
+        <fieldset>
+
+        <p>
+            Please tell us how easy it is to find information on the site.
+        </p>
+
+        <input type="radio" id="very_easy" name="ease_of_search" value="very easy">
+        <label for="very_easy">Very easy</label>
+        <input type="radio" id="easy" name="ease_of_search" value="easy">
+        <label for="easy">Easy</label>
+        <input type="radio" id="average" name="ease_of_search" value="average">
+        <label for="average">Average</label>
+        <input type="radio" id="difficult" name="ease_of_search" value="difficult">
+        <label for="difficult">Difficult</label>
+        <input type="radio" id="very_difficult" name="ease_of_search" value="very difficult">
+        <label for="very_difficult">Very Difficult</label>
+
+        </fieldset>
+
+        <fieldset class="tablefield">
+
+        <p>
+            What is the overall impression of this site?
+        </p>
+
+        <table>
+            <tr>
+                <th> </th>
+                <th>Below Expectations</th>
+                <th>Meets Expectations</th>
+                <th>Exceeds Expectations</th>
+            </tr>
+
+            <tr>
+                <td>Professional</td>
+                <td>
+                    <input type="radio" id="below_professioanl" name="professional" value="below">
+                    <label for="below_professioanl"></label>
+                </td>
+                <td>
+                    <input type="radio" id="meets_professional" name="professional" value="meets">
+                    <label for="meets_professional"></label>
+                </td>
+                <td>
+                    <input type="radio" id="exceeds_professional" name="professional" value="exceeds">
+                    <label for="exceeds_professional"></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Informative</td>
+                <td>
+                    <input type="radio" id="below_informative" name="informative" value="below">
+                    <label for="below_informative"></label>
+                </td>
+                <td>
+                    <input type="radio" id="meets_informative" name="informative" value="meets">
+                    <label for="meets_informative"></label>
+                </td>
+                <td>
+                    <input type="radio" id="exceeds_informative" name="informative" value="exceeds">
+                    <label for="exceeds_informative"></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Visually Pleasing</td>
+                <td>
+                    <input type="radio" id="below_visually_pleasing" name="visually_pleasing" value="below">
+                    <label for="below_visually_pleasing"></label>
+                </td>
+                <td>
+                    <input type="radio" id="meets_visually_pleasing" name="visually_pleasing" value="meets">
+                    <label for="meets_visually_pleasing"></label>
+                </td>
+                <td>
+                    <input type="radio" id="exceeds_visually_pleasing" name="visually_pleasing" value="exceeds">
+                    <label for="exceeds_visually_pleasing"></label>
+                </td>
+            </tr>
+        </table>
+
+        </fieldset>
+
+        <p>
+            Please add any comments you have for improving the website. We welcome suggestions on specific areas for <br>
+            improvements, features you would like to see added to the site, and examples of what you consider good websites.
+        </p>
+
+        <fieldset>
+
+        <textarea id="improvement_suggestions" name="improvement_suggestions" rows="5" cols="30"></textarea>
+
+        </fieldset>
+
+        <fieldset>
+
+        <p>
+            We would like to know a little bit about you.
+        </p>
+
+        <p>
+            <label for="email">eMail:</label>
+            <input type="email" id="email" name="email" size="25" placeholder="user@example.com" required>
+
+            <label for="homepage">Your Homepage:</label>
+            <input type="url" id="homepage" name="homepage" size="25" placeholder="http://www.example.com/" required>
+
+            <label for="birthday">Date of birth:</label>
+            <input type="date" id="birthday" name="birthday" required>  
+            
+            <br>
+
+        </p>
+        </fieldset>
+
+        <button>Send</button>
+
+    </form>
+
+    </body>
+</html>
